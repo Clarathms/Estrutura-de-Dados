@@ -1,0 +1,22 @@
+
+
+                                           Respostas Lista 4 de ED1:
+
+ 1) A complexidade do método tamanho() da Lista, é Linear O(n). É possível melhorá-lo, tornando-o mais simples:
+    Primeiramente, na classe Lista desse repositório, criei uma variável privada de tamanho (t). Inseri no
+    construtor e inicializei com 0. Crio os métodos de Get e Set no final do código para poder acessar e modi
+    ficar t, e em seguida, chamo em insere() t e acrescento 1, como é uma variável privada, chamei o setT(t+1)
+    para incrementar. Em remove() fiz o contrário, chamei o setT e reduzi 1. O tempo constante será O(1)
+
+ 2) Código em Q2, como percorre duas listas, a complexidade da questão é O(n+m)
+
+ 3) Ver código em Q3, complexidade é O(n), já que o método insere() na ListaGenericaOrdenada possui duas condicionais
+    que nao adicionam complexidade, e também um loop O(n)
+
+ 4)  Código em Main e Q4
+
+ 5) A complexidade da questão é O(n²), código em Q5 e main
+
+ 6) Complexidade: O(n). Códigos em main e Q6
+
+ 7) A Complexidade da questão é O(1). Códigos em Main e Q7
