@@ -1,0 +1,50 @@
+Aluna : Clara Thaís Maciel e Silva
+Turma: ED1 2021.2
+
+                                            Lista 3
+
+1)
+     a) O (n + m)
+     b) O (n²) -> Ordem quadrática
+     c) O (n*Logn)
+
+2)           Expressão              Termo(s) Dominante(s)      Ο(...)
+
+     a)   5 + 0.001n5 + 0.025n             0.001n5             O(n5)
+     b)  500n + 100n0.5 + 50nlog10 n      50nlog_10(n)        O(nLogn)
+     c)  0.3n + 5n1.5 + 2.5n1.75           2.5n1.75            O(n1.75)
+     d)  n²log2(n) + n(log2(n))²           n²log2(n)           O(n²logn)
+     e)  n log3 n + n log2 n              nLogn2(n)            O(nlogn)
+     f)  3log8(n) + log2(log2(log2(n)))    3log8(n)            O(logn)
+     g)  100n + 0.01n²                     0.01n²              O(n²)
+     h)  0.01n + 100n²                     100n²               O(n²)
+     i)  2n + n0.5 + 0.5n1.25              0.5n1.25            O(n1.25)
+     j)  0.01nlog2(n) + n(log2(n))²        n(log2(n))²         O(n(logn)²)
+     k)  100nlog3(n) + n³ + 100n           n³                  O(n³)
+     l)  0.003log4(n) + log2(log2(n))      0.003log4(n)        O(logn)
+
+ 3)
+     a) O (n) -> Ordem Linear, pois o while vai percorrer o vetor de tamanho n em todas as posições, a menos
+     que o caso permita que percorra apenas até o valor/elemento específico desejado (sendo o melhor
+     caso). O loop while irá iterar o count até n (vezes) - 1, já que o sinal é <. O coeficiente constante será ignorado e
+     os termos de baixa ordem não serão considerados, já que não interferem na complexidade final (pois não são dominantes)
+
+     b) O (n) -> Ordem Linear, pois o for vai percorrer o vetor de n em todas as posições, a menos
+     que o caso permita que percorra apenas até o valor/elemento específico desejado (sendo o melhor
+     caso). O coeficiente constante será ignorado e os termos de baixa ordem não serão considerados, já que não interferem
+     na complexidade final (pois não são dominantes)
+
+     c) O (Logn) , pois o while vai percorrer metade do vetor de n/2 para verificar se o elemento é < ou > que o elemento do meio do
+     arranjo (array). Assim, apenas uma parte da lista é mantida e o processo será repetiido até encontrar o elemento procurado.
+     No pior caso, serão feitas todas as comparações possíveis (n comparações) se o elemento n for o último da lista.Por isso ele
+     é o inverso do exponencial,diminui-se o n toda vez que um processamento é feito
+
+
+ 4) Código
+
+ 5) Ocorrendo o pior caso, como há um for dentro do outro utilizando n, as constantes e o if serão desconsiderados, já que não vão alterar
+ a ordem. Logo:
+ n + (n – 1) + (n – 2) + … 2 + 1
+ n * (n + 1) / 2
+ (n^2 + n)/2    -> Termo Dominante = n^2/2
+ Ordem de complexidade = O(n^2)
